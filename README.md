@@ -17,6 +17,7 @@
 | [Day 5](https://adventofcode.com/2023/day/5) | [⭐️](/problems/day5/sol1.py) | [⭐️](/problems/day5/sol2.py) |
 | [Day 6](https://adventofcode.com/2023/day/6) | [⭐️](/problems/day6/sol1.py) | [⭐️](/problems/day6/sol2.py) |
 | [Day 7](https://adventofcode.com/2023/day/7) | [⭐️](/problems/day7/sol1.py) | [⭐️](/problems/day7/sol2.py) |
+| [Day 8](https://adventofcode.com/2023/day/8) | [⭐️](/problems/day8/sol1.py) | [⭐️](/problems/day8/sol2.py) |
 
 ---
 
