@@ -12,6 +12,24 @@ def get_value(x):
     mp[x] = len(mp)
     return mp[x]
 
+def get_cycle_length(start, end):
+    cur = start
+    cnt = 0
+
+    while True:
+        com = commands[cnt % len(commands)]
+        cnt += 1
+        if com == 'L':
+            cur = M[cur][0]
+        else:
+            cur = M[cur][1]
+
+        if cur in end and cur != start:
+            print('Found it another ending node', cur, cnt)
+
+        if cur == start:
+            return cnt
+
 start = []
 end = set()
 
@@ -53,6 +71,14 @@ for x in start:
             cur = M[cur][1]
 
         if cur in end:
+            # For every start node we can see that the cycle length of the corresponding
+            # end node is the same that amount of steps we need to reach it.
+            # Also we can check that this cycle doesn't contain any other end nodes.
+            # So we can just calculate the cycle length of every start node and get the
+            # least common multiple of all of them.
+        
+            print(x, cnt, get_cycle_length(cur, end))
+
             break
     
     steps.append(cnt)
